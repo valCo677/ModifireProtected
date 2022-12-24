@@ -1,0 +1,20 @@
+
+    class Person {
+        protected String fname = "Valentin";
+        protected String lname = "Terziev";
+        protected String email = "valentin_terziev@outlook.com";
+        protected int age = 40;
+    }
+
+    class Student extends Person {
+        private int graduationYear = 2023;
+
+        public static void main( String[] args ) {
+            Student myObj = new Student ();
+            System.out.println ( "Name: " + myObj.fname + " " + myObj.lname );
+            System.out.println ( "Email: " + myObj.email );
+            System.out.println ( "Age: " + myObj.age );
+            System.out.println ( "Graduation Year: " + myObj.graduationYear );
+        }
+    }
+
